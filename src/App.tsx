@@ -28,7 +28,7 @@ const products = [
     name: "Leather Weekend Bag",
     price: 159.99,
     points: 1599,
-    description: "Handcrafted genuine leather travel bag",
+    description: "Handcrafted genuine leather travel DUrable bag.",
     image: "https://assets.grok.com/users/3f6555a4-798f-4284-b9a4-ec0bb0fa2f5b/AmQlMVpeeV2RTE6d-generated_image.jpg",
     category: "Accessories",
     stock: 8
@@ -146,7 +146,7 @@ function App() {
                 <Coins className="h-5 w-5 text-yellow-600" />
                 <span className="font-medium text-yellow-600">{points} points</span>
               </div>
-              <div className="relative">
+              <div className="relative ">
                 <input
                   type="text"
                   placeholder="Search products..."
@@ -275,13 +275,13 @@ function App() {
       <div className="max-w-7xl mx-auto px-4 py-8 bg-black">
         <div className="relative">
           <div className="overflow-hidden">
-            <div className="flex transition-transform duration-300" style={{ transform: `translateX(-${carouselIndex * 100}%)` }}>
+            <div className=" flex transition-transform duration-300" style={{ transform: `translateX(-${carouselIndex * 100}%)` }}>
               {products.map(product => (
                 <div key={product.id} className="w-full flex-shrink-0">
                   <div className="relative h-96">
                     <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                      <h2 className="text-white text-2xl font-bold">{product.name}</h2>
+                    <div className="bg-black absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                      <h2 className= "text-white text-2xl  font-bold">{product.name}</h2>
                       <p className="text-white/90 mt-2">{product.description}</p>
                       <div className="flex items-center justify-between mt-4">
                         <div>
@@ -345,9 +345,9 @@ function App() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="bg-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {filteredProducts.map(product => (
-            <div key={product.id} className="bg-white rounded-lg shadow-sm overflow-hidden group">
+            <div key={product.id} className="bg-black rounded-lg shadow-sm overflow-hidden group">
               <div className="relative">
                 <img src={product.image} alt={product.name} className="w-full h-64 object-cover" />
                 <button
@@ -357,12 +357,12 @@ function App() {
                   Quick View
                 </button>
               </div>
-              <div className="p-4">
+              <div className="p-4 bg-black">
                 <h3 className="text-lg font-semibold">{product.name}</h3>
-                <p className="text-gray-600 mt-1">{product.description}</p>
+                <p className="text-white mt-1">{product.description}</p>
                 <div className="flex items-center justify-between mt-4">
                   <div>
-                    <span className="text-lg font-bold">${product.price}</span>
+                    <span className="text-white text-lg font-bold">${product.price}</span>
                     <span className="text-sm text-yellow-600 ml-2">or {product.points} points</span>
                   </div>
                   <button 
