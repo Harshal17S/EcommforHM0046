@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Heart, User, Search, Mail, X, ChevronLeft, ChevronRight, Filter, SortDesc, Coins, Plus, Minus } from 'lucide-react';
+import bag from './Bag.jpg';
+import shirt from './Shirt.jpg';
+import cap from './Cap.jpg';
 
 // Mock data
 const products = [
@@ -9,7 +12,7 @@ const products = [
     price: 199.99,
     points: 1999,
     description: "Trendy cap with a sleek design, offering both style and sun protection for any occasion.",
-    image: "https://assets.grok.com/users/3f6555a4-798f-4284-b9a4-ec0bb0fa2f5b/KofOhwSCHTFfRwQ4-generated_image.jpg",
+    image: bag,
     category: "Cloths",
     stock: 5
   },
@@ -19,7 +22,7 @@ const products = [
     price: 299.99,
     points: 2999,
     description: "Comfortable, stylish t-shirt with a modern design, perfect for everyday wear.",
-    image: "https://assets.grok.com/users/3f6555a4-798f-4284-b9a4-ec0bb0fa2f5b/Mpznu7uVRcXmk2rp-generated_image.jpg",
+    image: shirt,
     category: "Cloths",
     stock: 3
   },
@@ -29,7 +32,7 @@ const products = [
     price: 159.99,
     points: 1599,
     description: "Handcrafted genuine leather travel DUrable bag.",
-    image: "https://assets.grok.com/users/3f6555a4-798f-4284-b9a4-ec0bb0fa2f5b/AmQlMVpeeV2RTE6d-generated_image.jpg",
+    image: bag,
     category: "Accessories",
     stock: 8
   }
