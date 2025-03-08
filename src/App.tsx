@@ -12,7 +12,7 @@ const products = [
     price: 199.99,
     points: 1999,
     description: "Trendy cap with a sleek design, offering both style and sun protection for any occasion.",
-    image: bag,
+    image: cap,
     category: "Cloths",
     stock: 5
   },
